@@ -1,0 +1,259 @@
+body{
+	margin:0;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+}
+.calendarContainer{
+	position:relative;
+	width:90%;
+	min-height:300px;
+	margin-left:5%;
+	margin-top:50px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.calendarOptions{
+	position:relative;
+	display:inline-block;
+	float:left;
+	width:50%;
+	margin-left:5%;
+	height:auto;
+}
+#calendarYear{
+	position:relative;
+	display:inline-block;
+	float:left;
+	width:100%;
+	height:auto;
+	font-size: calc(1em + 1vw);
+    font-family: 'Assistant', sans-serif;
+	text-align:right;
+	font-weight:600;
+	color:#0E3C69;
+}
+.calendarHeader{
+	position:relative;
+	width:100%;
+	height:auto;
+	margin-top:50px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.calendarArrowDiv{
+	position:relative;
+	display:inline-block;
+	width:5%;
+	height:auto;
+	float:left;
+	text-align:center;
+	margin-top:7px;
+	
+}
+.calendarArrowIcon{
+	color:#0E3C69;
+	font-size: calc(1em + 1vw);
+}
+.calendarArrowIcon:hover{
+	color:#DF5642;
+	cursor:pointer;
+}
+.calendarMonthYear{
+	position:relative;
+	display:inline-block;
+	width:90%;
+	height:auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-top:3px;
+	padding-bottom:5px;
+	float:left;
+}
+#calendarMonthPrevious{
+	position: relative;
+    display: inline-block;
+	float:left;
+    width: 30%;
+    height: auto;
+    margin-left: 2%;
+    font-size: calc(0.8em + 1vw);
+    font-family: 'Dancing Script', cursive;
+    color: #0E3C69;
+	text-align:left;
+}
+#calendarMonth{
+	position: relative;
+    display: inline-block;
+	float:left;
+    width: 30%;
+    height: auto;
+    margin-left: 3%;
+    font-size: calc(1.3em + 1vw);
+    font-family: 'Dancing Script', cursive;
+    color: #0E3C69;
+	text-align:center;
+}
+#calendarMonthNext{
+	position: relative;
+    display: inline-block;
+	float:left;
+    width: 30%;
+    height: auto;
+    margin-left: 3%;
+    font-size: calc(0.8em + 1vw);
+    font-family: 'Dancing Script', cursive;
+    color: #0E3C69;
+	text-align:right;
+}
+#weekDays{
+	position:relative;
+	height:auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin-top:0px;
+}
+
+.weekDay{
+	position:relative;
+	display:inline-block;
+	width:14.27%;
+	height:auto;
+	padding-top:12px;
+	padding-bottom:12px;
+	float:left;
+	font-family: 'Assistant', sans-serif;
+	font-size: calc(0.6em + 1vw);
+	font-weight:600;
+	text-align:center;
+}
+.week{
+	background-color:#DAEAFA;
+	color:#0E3C69;
+}
+.sa{
+	background-color:#2C87E2;
+	color:white;
+}
+.su{
+	background-color:#155799;
+	color:white;
+}
+.gapDay{
+	position:relative;
+	display:inline-block;
+	width:14.27%;
+	height:auto;
+	padding-top:12px;
+	padding-bottom:12px;
+	float:left;
+	font-family: 'Assistant', sans-serif;
+	font-size: calc(1em + 1vw);
+	text-align:center;
+	background-color:#E4E4E4;
+	border-bottom:solid 1px #D6D6D6;
+}
+.gapDay:hover{
+	cursor:pointer;
+	background-color:#ADADAD;
+}
+.monthDay{
+	position:relative;
+	display:inline-block;
+	width:14.27%;
+	height:auto;
+	padding-top:12px;
+	padding-bottom:12px;
+	float:left;
+	font-family: 'Assistant', sans-serif;
+	font-size: calc(1em + 1vw);
+	font-weight:600;
+	text-align:center;
+	border-bottom:solid 1px #D6D6D6;
+}
+.monthDay:hover{
+	cursor:pointer;
+	background-color:#DF5642;
+	color:white;
+}
+.normalDay{
+	color:#0E3C69;
+	background-color:white;
+}
+.saDay{
+	color:#2C87E2;
+	background-color:#F3F9FE;
+}
+.partyDay{
+	color:#DF5642;
+	background-color:#FEF5F7;
+}
+.today{
+	color:white;
+	background-color:#8FBC8F;
+}
+.copy{
+	position:relative;
+	display:block;
+	width:80%;
+	margin-left:10%;
+	margin-top:40px;
+	font-family: 'Assistant', sans-serif;
+	font-size: calc(0.4em + 1vw);
+	text-align:center;
+}
+
+/* MEDIA */
+
+@media (max-width: 650px){
+	
+	#calendarMonthPrevious{
+		font-size: calc(1.1em + 1vw);
+	}
+	
+	#calendarMonthNext{
+		font-size: calc(1.1em + 1vw);
+	}
+	
+	#calendarMonth{
+		font-size: calc(1.7em + 1vw);
+	}
+	
+	#calendarYear {
+		font-size: calc(1.3em + 1vw);
+	}
+	
+}
+
+@media (max-width: 425px){
+	
+	#calendarMonthPrevious{
+		display:none;
+	}
+	
+	#calendarMonthNext{
+		display:none;
+	}
+	
+	.calendarArrowDiv {
+		width: 10%;
+	}
+	
+	#calendarMonth {
+		width: 100%;
+	}
+	
+	.calendarMonthYear {
+		width: 80%;
+	}
+	
+	.gapDay {
+		font-size: calc(0.7em + 1vw);
+	}
+	
+	.monthDay {
+		font-size: calc(0.7em + 1vw);
+	}
+	
+}
